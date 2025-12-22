@@ -55,7 +55,23 @@ const TaskForm = ({ onCreateTask }) => {
           placeholder="Enter task title"
         />
       </div>
-
+      <div>
+        <label
+          className="block text-gray-700 text-sm font-medium mb-2"
+          htmlFor="category"
+        >
+          Category
+        </label>
+        <input
+          type="text"
+          id="title"
+          required
+          value={formData.category}
+          onChange={handleChange}
+          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
+          placeholder="Enter task category"
+        />
+      </div>
       <div>
         <label
           className="block text-gray-700 text-sm font-medium mb-2"
@@ -117,7 +133,7 @@ const TaskForm = ({ onCreateTask }) => {
       <div className="pt-4">
         <button
           type="submit"
-          className="w-full bg-blue-500 hover:bg-blue-600 text-white font-medium py-3 px-4 rounded-lg transition duration-200 flex items-center justify-center"
+          className="w-full bg-navy-btn  hover:bg-blue-600 text-white font-medium py-3 px-4 rounded-lg transition duration-200 flex items-center justify-center"
         >
           <i className="fas fa-plus mr-2"></i>Add Task
         </button>
